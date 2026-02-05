@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.graph_objects as go
+import plotly.graph_objects as go   
 import plotly.express as px
 from datetime import datetime, timedelta
 import calendar
@@ -252,5 +252,5 @@ st.markdown("""
     ---
     **Dashboard Fitness 2026** | Acompanhamento de Atividades Físicas
     
-    Desenvolvido com ❤️ usando Streamlit
+    Desenvolvido por Alef Oliveira
 """)
