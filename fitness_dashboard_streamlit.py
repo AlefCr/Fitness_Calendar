@@ -114,7 +114,7 @@ with col3:
     st.metric("Progresso", f"{progresso_percentual:.1f}%", delta=f"{progresso_percentual:.1f}%")
 
 with col4:
-    st.metric("Dias Faltantes", f"{dias_faltantes} dias", delta=f"-{dias_faltantes}")
+    st.metric("Dias Restantes", f"{dias_faltantes} dias", delta=f"-{dias_faltantes}")
 
 st.divider()
 
@@ -123,7 +123,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     fig_pizza = go.Figure(data=[go.Pie(
-        labels=["Realizado", "Faltante"],
+        labels=["Realizado", "Restante"],
         values=[total_atividades, dias_faltantes],
         marker=dict(colors=["#48BB78", "#E53E3E"]),
         textposition="inside",
@@ -252,5 +252,5 @@ st.markdown("""
     ---
     **Dashboard Fitness 2026** | Acompanhamento de Atividades Físicas
     
-    Desenvolvido por Alef Oliveira
+    Desenvolvido por Álef Oliveira
 """)
